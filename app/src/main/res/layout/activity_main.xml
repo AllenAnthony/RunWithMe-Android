@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f5e2"
+    tools:context="com.anthony.runwithme.MainActivity">
+
+
+
+
+        <!--the content view-->
+        <RelativeLayout
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/caodi"
+                android:id="@+id/grassland"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/sun"
+                android:id="@+id/sun"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/edge"
+                android:id="@+id/edge"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+            <TextView
+                android:gravity="center_vertical"
+                android:text="今天收集了0朵"
+                android:textSize="25dp"
+                android:typeface="normal"
+                android:textColor="#0680f2"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/edge"
+                android:layout_toStartOf="@+id/edge"
+                android:layout_alignBottom="@+id/edge" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:src="@drawable/heng"
+                android:layout_marginBottom="52dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:id="@+id/heng"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+
+            <TextView
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/tool"
+                android:layout_marginBottom="12dp"
+                android:layout_alignBottom="@+id/heng"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:id="@+id/plant"
+                android:src="@drawable/plant"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_alignBottom="@+id/tool"
+                android:layout_centerHorizontal="true" />
+            <!--layout_alignParentLeft和layout_alignParentStart-->
+            <!--效果是一样的，一个是从左边对齐，一个是从开始对齐。-->
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/seed"
+                android:layout_alignBottom="@+id/text_step"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="31dp"
+                android:id="@+id/seed" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/loop"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:id="@+id/loop"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="32dp" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_step"
+                android:textSize="150sp"
+                android:typeface="normal"
+                android:textColor="#3f64d1"
+                android:textStyle="bold"
+                android:layout_below="@+id/sun"
+                android:layout_centerHorizontal="true" />
+
+
+        </RelativeLayout>
+
+        <!--the navigetion view-->
+        <!--layout_gravity="start"表示从左向右划，layout_gravity="end"表示从右向左划-->
+
+        <ListView
+            android:id="@+id/navigation_view"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:gravity="center_vertical"
+            android:textSize="40sp"
+            android:background="#fffbe2"
+            android:choiceMode="singleChoice"
+            android:divider="#4a97da"
+            android:dividerHeight="4px">
+
+        </ListView>
+
+
+
+</android.support.v4.widget.DrawerLayout>

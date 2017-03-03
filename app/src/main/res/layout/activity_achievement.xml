@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_achievement"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f5e2"
+    tools:context="com.anthony.runwithme.AchievementActivity">
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:alpha="0.5"
+        android:src="@drawable/ban"
+        android:id="@+id/imageView"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2" />
+
+
+    <TextView
+        android:textSize="125sp"
+        android:typeface="normal"
+        android:textColor="#f9bb03"
+        android:textStyle="bold"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:textSize="70sp"
+        android:typeface="normal"
+        android:textColor="#3f64d1"
+        android:textStyle="bold"
+        android:text="步"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textSize="40sp"
+        android:typeface="normal"
+        android:textColor="#3f64d1"
+        android:text="您最多走了"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:textSize="40sp"
+        android:typeface="normal"
+        android:textColor="#3f64d1"
+        android:text="今天破纪录啦^_^"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp" />
+
+
+
+    <TextView
+        android:textSize="35sp"
+        android:typeface="normal"
+        android:textColor="#3f64d1"
+        android:text="在与我相伴的日子里"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_marginTop="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
